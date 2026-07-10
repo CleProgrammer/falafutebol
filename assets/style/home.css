@@ -1,0 +1,354 @@
+/* Cores Temáticas Alinhadas com a Página de Artigos */
+:root {
+    --primary-color: #2e7d32;
+    --primary-dark: #1b5e20;
+    --secondary-color: #111111;
+    --accent-color: #e65100;
+    --text-color: #444444;
+    --light-bg: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #161b22;
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-article-link {
+    text-decoration: none;
+    display: block;
+    overflow: hidden; /* Necessário para conter o efeito de zoom */
+    max-width: 1200px; /* Alinhado com o container do site */
+    margin: 0 auto; /* Centralizado */
+}
+
+.hero-article-container {
+    color: #ffffff;
+    height: 70vh; /* Altura da seção */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Conteúdo na parte inferior */
+    padding: 4rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Cantos arredondados */
+    margin-top: 2rem; /* Espaço do header */
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+/* Efeito de Zoom Suave ao passar o mouse */
+.hero-article-link:hover .hero-article-container {
+    transform: scale(1.03); /* Aumenta levemente */
+}
+
+.hero-article-content {
+    max-width: 800px; /* Limita a largura do texto */
+}
+
+.main-news-label {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-article-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para legibilidade */
+}
+
+.hero-article-excerpt {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero-article-meta {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    gap: 2rem;
+}
+
+/* Grid de Conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 2.5rem;
+}
+
+.main-content h2, .sidebar h2 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efeito de Zoom na Notícia Principal */
+.img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Aplica o efeito de aumento apenas no primeiro card (Notícia Principal) */
+.news-card:hover .news-img {
+    transform: scale(1.08);
+}
+
+.news-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.news-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    color: var(--secondary-color);
+}
+
+.news-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-title a:hover {
+    color: var(--primary-color);
+}
+
+/* Bloco de Doação / PIX */
+.donation-card {
+    background-color: #ffffff;
+    border: 2px solid var(--primary-color);
+}
+
+.donation-card .category {
+    color: var(--primary-color);
+}
+
+.pix-container {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.btn-pix {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.btn-pix:hover {
+    background-color: var(--primary-dark);
+}
+
+.copied-text {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0.4rem;
+    display: none;
+    font-weight: bold;
+}
+
+/* Lateral (Sidebar) */
+.sidebar-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.ranking-list {
+    list-style: none;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Rodapé */
+footer {
+    background-color: #161b22;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-article-container {
+        height: auto;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+    .hero-article-title {
+        font-size: 2rem;
+    }
+    .hero-article-excerpt {
+        font-size: 1rem;
+    }
+    .hero-article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* O QUE FOI ADICIONADO: Responsividade Avançada para Telas Grandes (Desktop UltraWide/4K) */
+@media (min-width: 1400px) {
+    .navbar, 
+    .hero-article-link, 
+    .container {
+        max-width: 1440px; /* Expande o limite do layout proporcionalmente */
+    }
+
+    .hero-article-container {
+        height: 60vh; /* Ajusta a proporção da altura nas telas maiores */
+        padding: 5rem; /* Mais respiro interno */
+    }
+
+    .hero-article-title {
+        font-size: 3.8rem; /* Aumenta o título para não parecer pequeno */
+    }
+
+    .hero-article-excerpt {
+        font-size: 1.4rem; /* Aumenta a descrição do banner */
+    }
+
+    .hero-article-content {
+        max-width: 1000px; /* Permite que o texto ocupe melhor o espaço expandido */
+    }
+}

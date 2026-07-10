@@ -1,0 +1,338 @@
+/* Cores e Reset Mantidos para Consistência */
+:root {
+    --primary-color: #2e7d32;
+    --primary-dark: #1b5e20;
+    --secondary-color: #111111;
+    --accent-color: #e65100;
+    --text-color: #333333;
+    --light-bg: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Topo */
+header {
+    background-color: #161b22;
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Estrutura Interna */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 2.5rem;
+}
+
+/* Conteúdo do Artigo */
+.article-container {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.article-meta {
+    margin-bottom: 1.5rem;
+}
+
+.category-badge {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.article-author-date {
+    font-size: 0.9rem;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Corpo do Texto */
+.article-body {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.article-body p {
+    margin-bottom: 1.5rem;
+}
+
+.main-article-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.img-caption {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* Bloco de Citação / Aspas */
+blockquote {
+    border-left: 5px solid var(--accent-color);
+    background-color: #fff8f5;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Compartilhar Matéria */
+.share-box {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.share-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-whatsapp { background-color: #25D366; }
+.btn-twitter { background-color: #1DA1F2; }
+
+/* Sidebar Relacionados */
+.sidebar-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.related-post {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.related-post:last-child {
+    margin-bottom: 0;
+}
+
+.related-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.related-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.related-title:hover {
+    color: var(--primary-color);
+}
+
+.ranking-list {
+    list-style: none;
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Bloco de Doação / PIX */
+.donation-card {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+}
+
+.donation-card .category {
+    color: var(--primary-color);
+}
+
+.pix-container {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.btn-pix {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.btn-pix:hover {
+    background-color: var(--primary-dark);
+}
+
+.copied-text {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0.4rem;
+    display: none;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #161b22;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .article-title {
+        font-size: 2rem;
+    }
+    .article-container {
+        padding: 1.5rem;
+    }
+}
+
+/* ADICIONADO: Responsividade para Telas Grandes (Desktop Expandido / UltraWide / 4K) */
+@media (min-width: 1400px) {
+    .navbar, 
+    .container {
+        max-width: 1440px; /* Expande uniformemente com a Home */
+    }
+
+    .article-container {
+        padding: 3.5rem; /* Mais espaçamento interno para telas amplas */
+    }
+
+    .article-title {
+        font-size: 3.2rem; /* Aumenta o tamanho do título para destacar o cabeçalho */
+    }
+
+    .article-body {
+        font-size: 1.2rem; /* Melhora consideravelmente a legibilidade do texto em telas grandes */
+    }
+
+    .main-article-img {
+        max-height: 550px; /* Permite que a imagem principal cresça proporcionalmente */
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/assets/images/falafutebol-icon.ico">
+    <link rel="canonical" href="https://falafutebol.com.br">
+    <title>Fala Futebol | Notícias, Análises e Curiosidades sobre Futebol</title>
+    <meta name="description" content="O espaço definitivo para quem respira futebol. Acompanhe notícias, análises táticas, bastidores do mercado da bola e a verdadeira resenha brasileira.">
+    <meta name="keywords" content="futebol, notícias de futebol, campeonato brasileiro, resenha, análises táticas, mercado da bola">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/style/home.css">
+</head>
+<body>
+
+    <!-- Topo / Menu (Sem o item Opinião) -->
+    <header>
+        <nav class="navbar">
+            <a href="https://falafutebol.com.br" class="logo">Fala<span>Futebol</span></a>
+            <ul class="nav-links">
+
+            </ul>
+            <script>
+                fetch("/components/links-navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector(".nav-links").innerHTML = data;
+                });
+            </script>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <a href="https://falafutebol.com.br/curiosidades/curiosidades-flamengo" class="hero-article-link">
+            <section class="hero-article-container" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('./assets/images/flamengo.webp')">
+                <div class="hero-article-content">
+                    <span class="main-news-label">EM DESTAQUE</span>
+                    <h1 class="hero-article-title">Manto Sagrado e Glórias: 5 Curiosidades sobre o Flamengo</h1>
+                    <p class="hero-article-excerpt">Conheça curiosidades sobre o Flamengo e descubra fatos marcantes da história do clube, grandes conquistas. Descubra momentos que ajudaram a transformar o Rubro-Negro em um dos maiores times do futebol brasileiro.</p>
+                    <div class="hero-article-meta">
+                        <span>Curiosidades Fala Futebol</span>
+                        <span>✓ 4 min de leitura</span>
+                    </div>
+                </div>
+            </section>
+	    </a>
+    </section>
+
+    <!-- Área de Conteúdo -->
+    <div class="container" id="ultimas-noticias">
+        
+        <!-- Bloco Principal de Notícias -->
+        <main class="main-content">
+            <h2>Matérias Recentes</h2>
+            <div class="news-grid">
+                
+                <!-- Card 1: Notícia Principal -->
+                <article class="news-card main-news">
+                    <div class="img-container">
+                        <img src="/assets/images/brasileirao.webp" alt="Campeonato Brasileiro 2026" class="news-img">
+                    </div>
+                    <div class="news-body">
+                        <span class="category">Brasileirão 2026</span>
+                        <h3 class="news-title"><a href="https://falafutebol.com.br/campeonatos/brasileirao-2026">Brasileirão 2026: Como Está a Disputa pelo Título e a Luta Contra o Rebaixamento</a></h3>
+                        <p>O principal campeonato do país caminha para o encerramento do primeiro turno com disputas acirradas em todas as frentes.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="news-card">
+                    <div class="img-container">
+                        <img src="/assets/images/corinthians.jpg" alt="corinthians" class="news-img">
+                    </div>
+                    <div class="news-body">
+                        <span class="category">Corinthians</span>
+                        <h3 class="news-title"><a href="https://falafutebol.com.br/curiosidades/curiosidades-corinthians">O Time do Povo: 5 Curiosidades sobre a História do Corinthians</a></h3>
+                        <p>Fundado por operários, o Corinthians construiu uma das trajetórias mais populares e apaixonantes do esporte mundial.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="news-card">
+                    <div class="img-container">
+                        <img src="/assets/images/palmeiras.jpg" alt="Palemiras" class="news-img">
+                    </div>
+                    <div class="news-body">
+                        <span class="category">Palmeiras</span>
+                        <h3 class="news-title"><a href="https://falafutebol.com.br/curiosidades/curiosidades-palmeiras">Da Perseguição Política à Glória Suprema: Fatos que Moldaram a Identidade do Palmeiras</a></h3>
+                        <p>O Alviverde Imponente transformou crises históricas em combustível para se consolidar como o Maior Campeão do Brasil.</p>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="news-card">
+                    <div class="img-container">
+                        <img src="/assets/images/flamengo.jpg" alt="Curiosidades sobre o Flamengo" class="news-img">
+                    </div>
+                    <div class="news-body">
+                        <span class="category">Flamengo</span>
+                        <h3 class="news-title"><a href="https://falafutebol.com.br/curiosidades/curiosidades-flamengo">Manto Sagrado e Glórias: 5 Curiosidades sobre o Flamengo</a></h3>
+                        <p>O Flamengo detém algumas das maiores marcas de público e histórias marcantes do futebol mundial.</p>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="news-card">
+                    <div class="img-container">
+                        <img src="/assets/images/designer.png" alt="Torcida" class="news-img">
+                    </div>
+                    <div class="news-body">
+                        <span class="category">Designer Gráfico</span>
+                        <h3 class="news-title"><a href="https://www.instagram.com/clebsondesignergrafico/">Clebson Designer: Designer Gráfico Esportivo</a></h3>
+                        <p>Se você precisa de um designer gráfico para redes sociais é só entrar em contato. <a href="https://wa.me/5575998009769" target="_blank" style="text-decoration: none; color: green;"><strong>whatsapp</strong></a> ou pelo <a href="https://www.instagram.com/clebsondesignergrafico/" style="text-decoration: none; color: purple;"><strong>Instagram</strong></a></p>
+                    </div>
+                </article>
+
+                <!-- Card 6: Bloco de Doações / PIX -->
+                <article class="news-card donation-card">
+                    <div class="news-body">
+                        <span class="category"><i class="fas fa-heart"></i> Apoie o Canal</span>
+                        <h3 class="news-title">Mantenha o Fala Futebol no ar</h3>
+                        <p>Faça uma contribuição voluntária de qualquer valor e ajude a manter esse site ativo para continuarmos postando mais conteúdo sobre futebol.</p>
+                        
+                        <div class="pix-container">
+                            <!-- Altere o valor do data-pix para a sua chave PIX real -->
+                            <button class="btn-pix" onclick="copiarPix()" id="btnPix">
+                                <i class="fas fa-copy"></i> Copiar Chave PIX
+                            </button>
+                            <div class="copied-text" id="copiedAlert">✓ Chave copiada com sucesso!</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                
+            </div>
+            </aside>
+        <script>
+            fetch("/components/tabela-brasileiro.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".sidebar-box").innerHTML = data;
+            });
+        </script>
+        </aside>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 falafutebol.com.br - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/assets/javascript/home.js"></script>
+</body>
+</html>
