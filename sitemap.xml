@@ -8,6 +8,7 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- BRASILEIRÃO -->
   <url>
     <loc>https://falafutebol.com.br/campeonatos/campeonato-brasileiro/brasileirao-2026</loc>
     <lastmod>2026-07-10</lastmod>
@@ -15,6 +16,7 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- CURIOSIDADES -->
   <url>
     <loc>https://falafutebol.com.br/curiosidades/curiosidades-flamengo</loc>
     <lastmod>2026-07-10</lastmod>
@@ -36,6 +38,28 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Demais páginas -->
+  <!-- TIMES: FLAMENGO -->
+  <url>
+    <loc>https://falafutebol.com.br/times/flamengo/historia-do-flamengo</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- TIMES: CORINTHIANS -->
+  <url>
+    <loc>https://falafutebol.com.br/times/corinthians/historia-do-corinthians</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- RANKINGS -->
+  <url>
+    <loc>https://falafutebol.com.br/rankings/maiores-torcidas-do-brasil</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
