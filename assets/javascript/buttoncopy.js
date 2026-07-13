@@ -1,6 +1,6 @@
 function copiarPix() {
     const btn = document.getElementById('btnPix');
-    const chavePix = "minhachavepix";
+    const chavePix = "falafuteboloficial@gmail.com";
     
     navigator.clipboard.writeText(chavePix).then(() => {
         const alertText = document.getElementById('copiedAlert');
