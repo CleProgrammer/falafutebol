@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/assets/images/falafutebol-icon.ico">
+    <link rel="canonical" href="https://falafutebol.com.br/times/flamengo/flamengo-mundial-de-81">
+    <title>Flamengo tem Mundial? Veja a História do Título de 1981</title>
+    <meta name="description" content="Flamengo tem Mundial? Descubra a história do título mundial de 1981, como aconteceu a conquista contra o Liverpool e por que o debate sobre o Mundial de Clubes continua até hoje.">
+    <meta name="keywords" content="Flamengo tem Mundial, Mundial do Flamengo, Flamengo Mundial 1981, Flamengo campeão mundial, Liverpool x Flamengo 1981, Copa Intercontinental 1981, título mundial do Flamengo, Flamengo história, futebol brasileiro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83P5JS0PL9"></script>
+    <script src="/assets/javascript/analytics.js"></script>
+</head>
+<body>
+
+    <!-- Topo / Menu -->
+    <header>
+        <nav class="navbar">
+            <a href="https://falafutebol.com.br" class="logo">Fala<span>Futebol</span></a>
+            <ul class="nav-links">
+            
+            </ul>
+            <script>
+                fetch("/components/links-navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector(".nav-links").innerHTML = data;
+                });
+            </script>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal do Artigo -->
+    <div class="container">
+        
+        <main class="article-container">
+            <article>
+                <div class="article-meta">
+                    <span class="category-badge">Flamengo: Mundial de 81</span>
+                    <h1 class="article-title">Flamengo tem Mundial? Veja a História do Título de 1981</h1>
+                    
+                    <div class="article-author-date">
+                        <span><i class="far fa-user"></i> Histórias dos Clubes</span>
+                        <span><i class="far fa-calendar-alt"></i> 13 de Julho de 2026</span>
+                    </div>
+                </div>
+
+                <!-- Imagem em Destaque -->
+                <img src="/assets/images/flamengo-mundial-81.jpg" alt="Flamengo Mundial de 81" class="main-article-img">
+
+                <div class="article-body">
+                
+                    <p>Sim. O Flamengo conquistou o Mundial de Clubes em 1981, considerado um dos maiores títulos de sua história. Na decisão, disputada em Tóquio, no Japão, o Rubro-Negro venceu o Liverpool, da Inglaterra, por 3 a 0, com dois gols de Nunes e um de Adílio.</p>
+
+                    <h3>Quando o Flamengo Ganhou o Mundial?</h3>
+
+                    <p>O título foi conquistado em <strong>13 de dezembro de 1981</strong>. Para chegar à decisão, o Flamengo venceu a Copa Libertadores da América daquele ano ao derrotar o Cobreloa, do Chile.</p>
+
+                    <h3>Quem Era o Time do Flamengo em 1981?</h3>
+
+                    <p>A equipe era comandada por Paulo César Carpegiani e contava com grandes jogadores como Zico, Júnior, Leandro, Andrade, Adílio, Tita e Nunes. Esse elenco é considerado um dos melhores da história do futebol brasileiro.</p>
+
+                    <h3>O Mundial de 1981 Vale Como Mundial?</h3>
+
+                    <p>Sim. A conquista de 1981 foi realizada na antiga Copa Intercontinental, torneio disputado entre o campeão da Copa Libertadores e o campeão da Liga dos Campeões da Europa. A FIFA reconhece os campeões da Copa Intercontinental como campeões mundiais de clubes.</p>
+
+                    <h3>Quantos Mundiais o Flamengo Tem?</h3>
+
+                    <p>O Flamengo possui <strong>1 título mundial</strong>, conquistado em 1981. O clube voltou a disputar a final do Mundial em 2019, 2022 e em 2025, mas foi derrotado pelo Liverpool, Al-Hilal e pelo PSG respectivamente.</p>
+
+                    <p>Portanto, a resposta é sim: o Flamengo tem um Mundial de Clubes. A conquista de 1981 sobre o Liverpool é um dos momentos mais marcantes da história do clube e permanece como uma das maiores vitórias do futebol brasileiro em competições internacionais.</p>
+                </div>
+
+                <!-- Botões de Compartilhamento -->
+                <div class="share-box">
+                    <strong>Compartilhe:</strong>
+                    <a id="share-whatsapp" href="" target="_blank" rel="noopener noreferrer" class="share-btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <!--<a href="#" class="share-btn btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>-->
+                </div>
+                <script src="/assets/javascript/share-whatsapp.js"></script>
+            </article>
+        </main>
+
+        <!-- Lateral da Página Interna -->
+        <aside class="sidebar" id="sidebar">
+            
+        </aside>
+        <script>
+            fetch("/components/mais-lidas.html")
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".sidebar").innerHTML = data;
+
+                return fetch("/components/tabela-brasileiro.html");
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector(".sidebar-box").innerHTML += data;
+            });
+        </script>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 falafutebol.com.br - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/assets/javascript/buttoncopy.js"></script>
+
+</body>
+</html>

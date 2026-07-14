@@ -8,11 +8,20 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- CAMPEONATOS -->
   <!-- BRASILEIRÃO -->
   <url>
     <loc>https://falafutebol.com.br/campeonatos/campeonato-brasileiro/brasileirao-2026</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- COPA DO MUNDO 2026 -->
+  <url>
+    <loc>https://falafutebol.com.br/campeonatos/copa-do-mundo/copa-do-mundo-2026</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
@@ -46,6 +55,13 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://falafutebol.com.br/times/flamengo/flamengo-mundial-de-81</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- TIMES: CORINTHIANS -->
   <url>
     <loc>https://falafutebol.com.br/times/corinthians/historia-do-corinthians</loc>
@@ -73,7 +89,7 @@
   <!-- JOGOS DE HOJE -->
   <url>
     <loc>https://falafutebol.com.br/noticias/jogos-de-hoje</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
