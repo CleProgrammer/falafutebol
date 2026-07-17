@@ -307,6 +307,8 @@ footer {
 
     .container {
         grid-template-columns: 1fr;
+        margin: 1rem auto;
+        padding: 0 1rem;
     }
     .article-title {
         font-size: 2rem;

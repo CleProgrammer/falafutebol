@@ -15,57 +15,53 @@
     <script src="/assets/javascript/analytics.js"></script>
 
     <style>
-        .titulos-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 30px 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0,0,0,.08);
-            background: #fff;
+        .mundiais-table{
+            width:100%;
+            border-collapse:collapse;
+            margin:20px 0;
+            font-size:15px;
+            background:#fff;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 8px rgba(0,0,0,.08);
         }
 
-        .titulos-table thead {
-            background: #000;
-            color: #fff;
+        .mundiais-table thead{
+            background:#111;
+            color:#fff;
         }
 
-        .titulos-table th {
-            padding: 16px;
-            font-size: 16px;
-            text-align: center;
-            font-weight: 600;
+        .mundiais-table th,
+        .mundiais-table td{
+            text-align:left;
         }
 
-        .titulos-table td {
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #ececec;
+        .mundiais-table tbody tr{
+            border-bottom:1px solid #e9e9e9;
+            transition:.2s;
         }
 
-        .titulos-table tbody tr:nth-child(even) {
-            background: #f8f8f8;
+        .mundiais-table tbody tr:last-child{
+            border-bottom:none;
         }
 
-        .titulos-table tbody tr:hover {
-            background: #f1f1f1;
-            transition: .2s;
+        .mundiais-table tbody tr:hover{
+            background:#f7f7f7;
         }
 
-        .campeao {
-            color: #0a8f2f;
-            font-weight: bold;
+        .mundiais-table td:first-child{
+            font-weight:700;
+            width:70px;
         }
 
-        @media (max-width: 768px) {
-            .titulos-table {
-                font-size: 14px;
-            }
-
-            .titulos-table th,
-            .titulos-table td {
-                padding: 10px 6px;
-            }
+        .campeao{
+            display:inline-block;
+            background:#e8f5e9;
+            color:#2e7d32;
+            font-weight:700;
+            padding:5px 10px;
+            border-radius:20px;
+            white-space:nowrap;
         }
     </style>
 </head>
@@ -132,35 +128,27 @@
 
                     <h3>Principais Campanhas</h3>
 
-                    <table class="titulos-table">
-                        <thead>
-                            <tr>
-                                <th>Ano</th>
-                                <th>Competição</th>
-                                <th>Final</th>
-                                <th>Resultado</th>
-                                <th>Título</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>2000</td>
-                                <td>Mundial de Clubes da FIFA</td>
-                                <td>Corinthians × Vasco</td>
-                                <td>0 x 0 (4 x 3 nos pênaltis)</td>
-                                <td class="campeao">🏆 Campeão</td>
-                            </tr>
-
-                            <tr>
-                                <td>2012</td>
-                                <td>Mundial de Clubes da FIFA</td>
-                                <td>Corinthians × Chelsea</td>
-                                <td>1 x 0</td>
-                                <td class="campeao">🏆 Campeão</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <table class="mundiais-table">
+    <thead>
+        <tr>
+            <th>Ano</th>
+            <th>Final</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>2000</strong></td>
+            <td>Corinthians × Vasco</td>
+            <td><span class="campeao">🏆 0 x 0 (4 x 3 p.)</span></td>
+        </tr>
+        <tr>
+            <td><strong>2012</strong></td>
+            <td>Corinthians × Chelsea</td>
+            <td><span class="campeao">🏆 1 x 0</span></td>
+        </tr>
+    </tbody>
+</table>
 
                     <p>Portanto, a resposta é sim: o Corinthians tem dois títulos mundiais. As conquistas de 2000 e 2012 marcaram a história do clube e reforçaram sua posição entre os maiores vencedores do futebol brasileiro. O título sobre o Chelsea, em 2012, é considerado um dos momentos mais memoráveis da história da Fiel Torcida.</p>
 
