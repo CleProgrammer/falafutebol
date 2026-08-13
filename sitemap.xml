@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://falafutebol.com.br/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- LIBERTADORES -->
   <url>
     <loc>https://falafutebol.com.br/campeonatos/libertadores/libertadores-2026</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -36,7 +36,7 @@
   <!-- JOGOS DO DIA -->
   <url>
     <loc>https://falafutebol.com.br/agenda/jogos-do-dia</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -73,7 +73,7 @@
 
   <url>
     <loc>https://falafutebol.com.br/times/flamengo/flamengo-mundial-de-81</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -87,7 +87,7 @@
 
   <url>
     <loc>https://falafutebol.com.br/times/flamengo/flamengo-libertadores</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -116,7 +116,7 @@
 
   <url>
     <loc>https://falafutebol.com.br/times/corinthians/corinthians-campeao-mundial</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -159,7 +159,7 @@
 
   <url>
     <loc>https://falafutebol.com.br/times/palmeiras/palmeiras-libertadores</loc>
-    <lastmod>2026-07-20</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
